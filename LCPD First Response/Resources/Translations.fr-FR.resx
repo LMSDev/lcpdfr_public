@@ -1,0 +1,833 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+
+  <data name="ANPR_FLED_CRIME_SCENE" xml:space="preserve">
+    <value>Utilisé pour fuir une scène de crime</value>
+  </data>
+
+  <data name="ANPR_HANDLE" xml:space="preserve">
+    <value>Lorsque vous détectez un véhicule avec le système LAPI (ALPR), vous pouvez transmettre les informations concernant le véhicule au central après que le conducteur a été arrêté.</value>
+  </data>
+
+  <data name="ANPR_HANDLE_PARKED" xml:space="preserve">
+    <value>Lorsque vous détectez un véhicule stationné avec le système LAPI (ALPR), vous pouvez vous en approcher à pied et transmettre au central les détails le concernant par radio. Il sera alors pris en charge.</value>
+  </data>
+
+  <data name="ANPR_HNR" xml:space="preserve">
+    <value>Impliqué dans un délit de fuite</value>
+  </data>
+
+  <data name="ANPR_OWNER_WARRANT" xml:space="preserve">
+    <value>Mandat contre propriétaire</value>
+  </data>
+
+  <data name="ANPR_PLATE_EXPIRED" xml:space="preserve">
+    <value>La vignette de la plaque d'immatriculation a expiré</value>
+  </data>
+
+  <data name="ANPR_STOLEN" xml:space="preserve">
+    <value>Volé</value>
+  </data>
+
+  <data name="ANPR_STRUCK" xml:space="preserve">
+    <value>A percuté un piéton</value>
+  </data>
+
+  <data name="ANPR_TRANSMIT" xml:space="preserve">
+    <value>Appuyez sur ~KEY_ISSUE_PARKING_TICKET~ pour transmettre les informations concernant le véhicule au central.</value>
+  </data>
+
+  <data name="ANPR_UNPAID_TICKET" xml:space="preserve">
+    <value>Constats d'infraction non payés</value>
+  </data>
+
+  <data name="ARREST_ALREADY_ARRESTED_OPTIONS" xml:space="preserve">
+    <value>Appuyez sur ~KEY_ARREST~ pour relâcher le suspect. Si aucun véhicule de transport de détenus n'a été dépêché sur place, maintenez la touche ~KEY_ARREST~ enfoncée pour en demander un autre.</value>
+  </data>
+
+  <data name="ARREST_CAN_ARREST_NOW" xml:space="preserve">
+    <value>Vous pouvez arrêter la personne que vous visez en appuyant sur ~KEY_ARREST~. Maintenez la touche enfoncée pour afficher plus d'options.</value>
+  </data>
+
+  <data name="ARREST_CAN_STOP_NOW" xml:space="preserve">
+    <value>Appuyez sur ~KEY_ARREST~ pour ordonner au suspect de s'arrêter.</value>
+  </data>
+
+  <data name="ARREST_CLOSE_TO_PD_DROPOFF" xml:space="preserve">
+    <value>Roulez sur le ~b~marqueur~w~ pour que le suspect soit placé en détention. L'emplacement du parking ~BLIP_79~ est indiqué sur votre carte.</value>
+  </data>
+
+  <data name="ARREST_FOUR_SEATS_VEHICLE" xml:space="preserve">
+    <value>Vous avez besoin d'un véhicule à quatre portes.</value>
+  </data>
+
+  <data name="ARREST_GET_A_VEHICLE" xml:space="preserve">
+    <value>Montez dans un véhicule de police.</value>
+  </data>
+
+  <data name="ARREST_GET_BEHIND" xml:space="preserve">
+    <value>Placez-vous derrière le suspect.</value>
+  </data>
+
+  <data name="ARREST_IN_VEHICLE" xml:space="preserve">
+    <value>Le suspect est désormais dans votre véhicule. Vous pouvez cependant le relâcher à tout moment. Pour cela, il vous suffit d'ouvrir la porte et de le viser, puis d'appuyer sur ~KEY_ARREST~. Pour ouvrir la porte, vous devez appuyer sur ~KEY_OPEN_TRUNK~ tout en vous tenant à proximité.</value>
+  </data>
+
+  <data name="ARREST_LEAVE_VEHICLE_F" xml:space="preserve">
+    <value>Appuyez sur ~KEY_ARREST~ pour lui ordonner de descendre du véhicule.</value>
+  </data>
+
+  <data name="ARREST_LEAVE_VEHICLE_M" xml:space="preserve">
+    <value>Appuyez sur ~KEY_ARREST~ pour lui ordonner de descendre du véhicule.</value>
+  </data>
+
+  <data name="ARREST_MULTIPLE_SUSPECTS" xml:space="preserve">
+    <value>Vous devez viser un suspect en particulier pour effectuer une action.</value>
+  </data>
+
+  <data name="ARREST_NO_COP_CAR" xml:space="preserve">
+    <value>Ceci n'est pas un véhicule de police.</value>
+  </data>
+
+  <data name="ARREST_NO_VEHICLE" xml:space="preserve">
+    <value>Vous n'avez pas de véhicule.</value>
+  </data>
+
+  <data name="ARREST_OPEN_DOOR_ENTER" xml:space="preserve">
+    <value>Ouvrez une des portes arrières pour faire monter le suspect dans le véhicule.</value>
+  </data>
+
+  <data name="ARREST_OPEN_DOOR_LEAVE" xml:space="preserve">
+    <value>Ouvrez la porte pour faire descendre le suspect du vehicule.</value>
+  </data>
+
+  <data name="ARREST_OPTIONS_FINE" xml:space="preserve">
+    <value>~KEY_DIALOG_1~ 100 $~n~~KEY_DIALOG_2~ 60 $~n~~KEY_DIALOG_3~ 40 $</value>
+  </data>
+
+  <data name="ARREST_OPTIONS_HOLD" xml:space="preserve">
+    <value>~KEY_DIALOG_1~ Le faire monter dans le véhicule.~n~~KEY_DIALOG_2~ Détenir à pied.~n~~n~Maintenez la touche ~KEY_ARREST~ enfoncée pour revenir au menu précédent.</value>
+  </data>
+
+  <data name="ARREST_OPTIONS_INVESTIGATE" xml:space="preserve">
+    <value>~KEY_DIALOG_1~ Fouiller le suspect.~n~~KEY_DIALOG_2~ Lui demander ses papiers.~n~~KEY_DIALOG_3~ Émettre un constat.~n~~n~Maintenez la touche ~KEY_ARREST~ enfoncée pour revenir au menu précédent.</value>
+  </data>
+
+  <data name="ARREST_OPTIONS_LEAVE" xml:space="preserve">
+    <value>~KEY_DIALOG_1~ Lui demander de circuler.~n~~KEY_DIALOG_2~ Lui demander d'évacuer la zone.~n~~KEY_DIALOG_3~ Lui demander de remonter dans son véhicule.~n~~n~Maintenez la touche ~KEY_ARREST~ enfoncée pour revenir au menu précédent.</value>
+  </data>
+
+  <data name="ARREST_OPTIONS_MORE" xml:space="preserve">
+    <value>~KEY_DIALOG_1~ Détenir le suspect.~n~~KEY_DIALOG_2~ Enquêter sur le suspect.~n~~KEY_DIALOG_3~ Lui donner un ordre.~n~~KEY_DIALOG_4~ Le relâcher.</value>
+  </data>
+
+  <data name="ARREST_PED_LEFT_VEHICLE" xml:space="preserve">
+    <value>Maintenant que le suspect a quitté le véhicule, vous pouvez gérer la scène comme bon vous semble.~n~Si vous vous éloignez trop, le suspect reprendra tout simplement la route.</value>
+  </data>
+
+  <data name="ARREST_STOP_GRABBING" xml:space="preserve">
+    <value>Appuyez sur ~KEY_ARREST~ pour relâcher le suspect et poursuivre vos activités.</value>
+  </data>
+
+  <data name="ARREST_SUSPECT_BEING_REMOVED" xml:space="preserve">
+    <value>Une fois au poste de police, les agents de détention placeront votre détenu en cellule.</value>
+  </data>
+
+  <data name="ARREST_SUSPECT_IN_CUSTODY" xml:space="preserve">
+    <value>Suspect placé en détention.</value>
+  </data>
+
+  <data name="ARREST_SUSPECT_IN_VEHICLE" xml:space="preserve">
+    <value>Appuyez sur ~KEY_ARREST~ pour ordonner au suspect de quitter le véhicule.</value>
+  </data>
+
+  <data name="ARREST_SUSPECT_IS_CUFFED" xml:space="preserve">
+    <value>Le suspect a été arrêté.~n~ ~KEY_ARREST_DRIVE_TO_PD~ Conduire le suspect à un poste de police~n~ ~KEY_ARREST_CALL_TRANSPORTER~ Demander un véhicule de transport de détenus</value>
+  </data>
+
+  <data name="ARREST_SUSPECT_WILL_BE_DRIVEN_AWAY" xml:space="preserve">
+    <value>Un véhicule de transport de détenus est en route.</value>
+  </data>
+
+  <data name="ARREST_TAKE_TO_PD" xml:space="preserve">
+    <value>Conduisez le suspect à un poste de police.</value>
+  </data>
+
+  <data name="ARREST_TAKE_TO_PD_CLOSER" xml:space="preserve">
+    <value>Le suspect doit être plus près du poste de police pour pouvoir y être incarcéré.</value>
+  </data>
+
+  <data name="ARREST_TASE" xml:space="preserve">
+    <value>Vous pouvez utiliser le pistolet électrique pour augmenter le niveau de coopération des suspects.</value>
+  </data>
+
+  <data name="BACKUP_AIR_UNIT_DISPATCHED" xml:space="preserve">
+    <value>Une unité de soutien aérien est en route.</value>
+  </data>
+
+  <data name="BACKUP_IN_VICINITY" xml:space="preserve">
+    <value>J'suis pas loin, tiens bon !</value>
+  </data>
+
+  <data name="BACKUP_NEED_AIR_SUPPORT" xml:space="preserve">
+    <value>J'ai besoin d'un soutien aérien à {0}.</value>
+  </data>
+
+  <data name="BACKUP_NEED_AMBULANCE" xml:space="preserve">
+    <value>Central, dépêchez une ambulance à {0}.</value>
+  </data>
+
+  <data name="BACKUP_NEED_BACKUP" xml:space="preserve">
+    <value>J'ai besoin de renforts à {0}.</value>
+  </data>
+
+  <data name="BACKUP_NEED_FIRETRUCK" xml:space="preserve">
+    <value>Central, dépêchez les pompiers à {0}.</value>
+  </data>
+
+  <data name="BACKUP_NEED_NOOSE_BACKUP" xml:space="preserve">
+    <value>J'ai besoin d'une équipe du NOoSE à {0}.</value>
+  </data>
+
+  <data name="BACKUP_NO_UNIT_AVAILABLE" xml:space="preserve">
+    <value>Aucune unité n'est disponible.</value>
+  </data>
+
+  <data name="BACKUP_PURSUIT_ASSISTANCE" xml:space="preserve">
+    <value>Demande de renforts pour une poursuite.</value>
+  </data>
+
+  <data name="BACKUP_UNIT_DISPATCHED" xml:space="preserve">
+    <value>Une unité est en route.</value>
+  </data>
+
+  <data name="CALLOUTMANAGER_BUSY" xml:space="preserve">
+    <value>Vous êtes désormais occupé et ne recevrez plus d'appels.</value>
+  </data>
+
+  <data name="CALLOUTMANAGER_NOT_BUSY" xml:space="preserve">
+    <value>Vous n'êtes plus occupé et recevrez donc des appels.</value>
+  </data>
+
+  <data name="CALLOUT_ACCEPTED" xml:space="preserve">
+    <value>En route.</value>
+  </data>
+
+  <data name="CALLOUT_DISREGARD" xml:space="preserve">
+    <value>Veuillez ignorer le dernier appel.</value>
+  </data>
+
+  <data name="CALLOUT_DISTURBANCE_MAKE_LEAVE" xml:space="preserve">
+    <value>Ordonnez aux ~r~sans-abris~w~ de quitter la zone.</value>
+  </data>
+
+  <data name="CALLOUT_DISTURBANCE_MESSAGE" xml:space="preserve">
+    <value>On nous signale des sans-abris qui troubleraient l'ordre public à {0}.</value>
+  </data>
+
+  <data name="CALLOUT_DRUGDEAL_MESSAGE" xml:space="preserve">
+    <value>À toutes les unités, on nous signale qu'un échange de stupéfiants serait en cours à {0}.</value>
+  </data>
+
+  <data name="CALLOUT_DRUNK_DRIVER_CATCH_UP" xml:space="preserve">
+    <value>Rattrapez le ~r~conducteur.</value>
+  </data>
+
+  <data name="CALLOUT_DRUNK_DRIVER_MESSAGE" xml:space="preserve">
+    <value>Central à toutes les unités, on nous signale un conducteur en état d'ébriété à {0}.</value>
+  </data>
+
+  <data name="CALLOUT_GET_TO_CRIME_SCENE" xml:space="preserve">
+    <value>Rendez-vous à la ~w~scène de crime~w~.</value>
+  </data>
+
+  <data name="CALLOUT_IGNORED" xml:space="preserve">
+    <value>Incapable d'assister.</value>
+  </data>
+
+  <data name="CALLOUT_MUGGING_MESSAGE" xml:space="preserve">
+    <value>Nous avons une plainte d'agression à main armée dans {0}, toutes les unités disponibles, veuillez répondre.</value>
+  </data>
+
+  <data name="CALLOUT_ROBBERY_CATCH_UP" xml:space="preserve">
+    <value>Rattrapez la ~r~poursuite~w~.</value>
+  </data>
+
+  <data name="CALLOUT_ROBBERY_GTA_MESSAGE" xml:space="preserve">
+    <value>À toutes les unités disponibles, on nous signale un véhicule volé à {0}.</value>
+  </data>
+
+  <data name="CALLOUT_ROBBERY_PURSUIT_MESSAGE" xml:space="preserve">
+    <value>À toutes les unités, un suspect refuse d'obtempérer dans {0}.</value>
+  </data>
+
+  <data name="CALLOUT_ROBBERY_ROBBERY_MESSAGE" xml:space="preserve">
+    <value>À toutes les unités, nous avons un vol à main armée et les suspects refusent d'optempérer dans {0}.</value>
+  </data>
+
+  <data name="CALLOUT_ROGER_THAT" xml:space="preserve">
+    <value>Bien reçu.</value>
+  </data>
+
+  <data name="CALLOUT_SHOOTOUT_END_TW" xml:space="preserve">
+    <value>La zone est sécurisée.</value>
+  </data>
+
+  <data name="CALLOUT_SHOOTOUT_FIGHT_SUSPECTS" xml:space="preserve">
+    <value>Arrêtez ou tuez les ~r~suspects~w~.</value>
+  </data>
+
+  <data name="CALLOUT_SHOOTOUT_MESSAGE" xml:space="preserve">
+    <value>À toutes les unités, des civils nous ont signalé avoir entendu des coups de feu à {0}.</value>
+  </data>
+
+  <data name="CALLOUT_SHOOTOUT_PRANK_END" xml:space="preserve">
+    <value>La zone est sécurisée, vous pouvez quitter la scène.</value>
+  </data>
+
+  <data name="CALLOUT_SHOOTOUT_PRANK_END_TW" xml:space="preserve">
+    <value>La zone est sécurisée, enquête du numéro de téléphone.</value>
+  </data>
+
+  <data name="CALLOUT_SHOOTOUT_PRANK_INVESTIGATE" xml:space="preserve">
+    <value>Enquêtez sur la zone.</value>
+  </data>
+
+  <data name="CALLOUT_TIMEOUT" xml:space="preserve">
+    <value>La scène est sécurisée.</value>
+  </data>
+
+  <data name="CALLOUT_UPDATE_STATE" xml:space="preserve">
+    <value>Bien joué, agent! Pour transmettre votre nouveau statut au central et être disponible pour d'autres appels, appuyez sur ~KEY_UPDATE_CALLOUT_STATE~. Le symbole dans le coin gauche en bas de l'écran demeurera jusqu'à ce que vous modifiez votre statut.</value>
+  </data>
+
+  <data name="CALL_IN_CIVILIAN_DEATH" xml:space="preserve">
+    <value>Si vous rencontrez un civil grièvement blessé, vous pouvez le rapporter au central en appuyant sur ~KEY_CALL_IN_PURSUIT~.</value>
+  </data>
+
+  <data name="CALL_IN_COP_DEATH" xml:space="preserve">
+    <value>Si un agent est tué, vous pouvez le rapporter au central en appuyant sur ~KEY_CALL_IN_PURSUIT~.</value>
+  </data>
+
+  <data name="CALL_IN_PURSUIT" xml:space="preserve">
+    <value>Si un suspect s'enfuie, vous pouvez appuyer sur ~KEY_CALL_IN_PURSUIT~ pour démarrer une poursuite.</value>
+  </data>
+
+  <data name="CALL_IN_PURSUIT_DEATH" xml:space="preserve">
+    <value>Si un suspect est tué, vous pouvez le rapporter au central en appuyant sur ~KEY_CALL_IN_PURSUIT~.</value>
+  </data>
+
+  <data name="CHASE_LETHAL_FORCE_ALLOWED" xml:space="preserve">
+    <value>Force létale autorisée.</value>
+  </data>
+
+  <data name="CHASE_LETHAL_FORCE_FORBIDDEN" xml:space="preserve">
+    <value>Force létale non autorisée.</value>
+  </data>
+
+  <data name="CHASE_TACTIC_AGGRESSIVE" xml:space="preserve">
+    <value>Utilisation de techniques agressives.</value>
+  </data>
+
+  <data name="CHASE_TACTIC_PASSIVE" xml:space="preserve">
+    <value>Utilisation de techniques passives.</value>
+  </data>
+
+  <data name="FRISK_FOUND_CC" xml:space="preserve">
+    <value>Vous avez trouvé des cartes de crédit volées.</value>
+  </data>
+
+  <data name="FRISK_FOUND_DRUGS" xml:space="preserve">
+    <value>Vous avez trouvé des substances illicites.</value>
+  </data>
+
+  <data name="FRISK_FOUND_NOTHING" xml:space="preserve">
+    <value>Vous n'avez rien trouvé.</value>
+  </data>
+
+  <data name="FRISK_FOUND_WEAPON" xml:space="preserve">
+    <value>Vous avez trouvé une arme.</value>
+  </data>
+
+  <data name="FRISK_GET_BEHIND_SUSPECT" xml:space="preserve">
+    <value>Placez-vous derrière le suspect.</value>
+  </data>
+
+  <data name="FRISK_ID" xml:space="preserve">
+    <value>Nom : {0}~n~DDN : {1}</value>
+  </data>
+
+  <data name="FRISK_START_OPTIONS" xml:space="preserve">
+    <value>~KEY_FRISK_HOLD~ Retenir le suspect.~n~~KEY_FRISK_START_FRISKING~ Fouiller le suspect.~n~~KEY_FRISK_ASK_FOR_ID~ Demander les papiers.~n~~KEY_FRISK_RELEASE~ Relâcher le suspect.</value>
+  </data>
+
+  <data name="GET_BACK_TO_SUSPECT" xml:space="preserve">
+    <value>Retournez au véhicule intercepté.</value>
+  </data>
+
+  <data name="GOONDUTY_CAR_MODEL" xml:space="preserve">
+    <value>Utilisez ~KEY_PREVIOUS_COP_CAR_MODEL~~KEY_NEXT_COP_CAR_MODEL~ pour voir les modèles différents.~n~Appuyez sur ~KEY_CONFIRM_COP_CAR_MODEL~ pour compléter votre sélection.</value>
+  </data>
+
+  <data name="GOONDUTY_COP_MODEL" xml:space="preserve">
+    <value>Utilisez ~KEY_PREVIOUS_COP_MODEL~~KEY_NEXT_COP_MODEL~ pour voir les modèles différents.~n~Appuyez sur ~KEY_RANDOMIZE_COP_MODEL~ pour changer l'apparence.~n~Une fois terminer, appuyez sur ~KEY_CONFIRM_COP_MODEL~.</value>
+  </data>
+
+  <data name="GOONDUTY_COP_MODEL_COMPONENT" xml:space="preserve">
+    <value>Changement: ~r~{0}~w~~n~Utilisez ~KEY_PREVIOUS_COP_MODEL~~KEY_NEXT_COP_MODEL~ pour changer pour les différents modèles.~n~Utilisez ~KEY_NEXT_COP_MODEL_TEXTURE~~KEY_PREVIOUS_COP_MODEL_TEXTURE~ pour changer la texture.~n~Appuyez sur ~KEY_PREVIOUS_COP_MODEL_COMPONENT~ pour revenir.~n~Appuyez sur ~KEY_CONFIRM_COP_MODEL~ pour confirmer.</value>
+  </data>
+
+  <data name="GOONDUTY_END" xml:space="preserve">
+    <value>Vous n'êtes plus en service.</value>
+  </data>
+
+  <data name="GOONDUTY_NEWS_SCROLLBAR_WEBSITE" xml:space="preserve">
+    <value>Visitez le site web OFFICIEL de LCPDFR (www.lcpdfr.com)</value>
+  </data>
+
+  <data name="GOONDUTY_NEWS_SCROLLBAR_WELCOME" xml:space="preserve">
+    <value>BIENVENUE SUR LCPDFR VERSION {0}</value>
+  </data>
+
+  <data name="INPUT_RETURN" xml:space="preserve">
+    <value>ENTRÉE</value>
+  </data>
+
+  <data name="INPUT_SHIFT" xml:space="preserve">
+    <value>MAJUSCULE</value>
+  </data>
+
+  <data name="INPUT_SPACE" xml:space="preserve">
+    <value>BARRE D'ESPACE</value>
+  </data>
+
+  <data name="LCPDFR_STARTED" xml:space="preserve">
+    <value>Bienvenue sur LCPDFR. ~n~~n~Conduisez jusqu'au poste de police le plus proche pour prendre votre service.</value>
+  </data>
+
+  <data name="LCPDFR_STOPPED" xml:space="preserve">
+    <value>LCPDFR s'est arrêté et n'est plus en fonction.~n~Appuyez sur ~KEY_START~ pour le redémarrer.</value>
+  </data>
+
+  <data name="LCPDMAIN_DEVELOPED_BY" xml:space="preserve">
+    <value>Développé par LMS et Sam.</value>
+  </data>
+
+  <data name="LCPDMAIN_HARDMODE" xml:space="preserve">
+    <value>Mode hardcore actif : {0}</value>
+  </data>
+
+  <data name="LCPDMAIN_SCRIPT_CONTRIBUTIONS" xml:space="preserve">
+    <value>Contributions au script de LCPD:FR par l'équipe de G17 Media, Lt.Caine et Abraxas.</value>
+  </data>
+
+  <data name="LCPDMAIN_SPECIAL_THANKS" xml:space="preserve">
+    <value>Un gros merci à listener, aru et #iv-modding.</value>
+  </data>
+
+  <data name="LCPDMAIN_TRANSLATOR_THANKS" xml:space="preserve">
+    <value>Traduction française par Sgt. Jackson et Francis.</value>
+  </data>
+
+  <data name="PARKING_TICKET_ISSUE" xml:space="preserve">
+    <value>Vous pouvez émettre un constat d'infraction contre un véhicule inoccupé et immobilisé en appuyant sur ~KEY_ISSUE_PARKING_TICKET~ près de la porte du conducteur.</value>
+  </data>
+
+  <data name="PARTNER_PARTNER" xml:space="preserve">
+    <value>Partenaire</value>
+  </data>
+
+  <data name="POLICEDEPARTMENT_GOT_PARTNER" xml:space="preserve">
+    <value>Votre partenaire vous accompagnera dans votre travail. S'il décède, vous pouvez revenir dans un poste de police pour en obtenir un autre.</value>
+  </data>
+
+  <data name="POLICEDEPARTMENT_INTRODUCTION_LEAVE" xml:space="preserve">
+    <value>Pour quitter le poste de police, entrez ce point de contrôle.</value>
+  </data>
+
+  <data name="POLICEDEPARTMENT_INTRODUCTION_ONDUTY" xml:space="preserve">
+    <value>Entrez dans cette pièce pour entrer en service.</value>
+  </data>
+
+  <data name="POLICEDEPARTMENT_INTRODUCTION_PARTNER" xml:space="preserve">
+    <value>Dans cette pièce, vous pouvez choisir un partenaire et recharger votre vie.</value>
+  </data>
+
+  <data name="POLICEDEPARTMENT_INTRODUCTION_START" xml:space="preserve">
+    <value>Ici vous pouvez aller en ou hors service, recharger votre vie, recruter un partenaire ou simplement relaxer.</value>
+  </data>
+
+  <data name="POLICEDEPARTMENT_IN_PARTNER_CHECKPOINT" xml:space="preserve">
+    <value>Appuyez sur ~INPUT_PICKUP~ pour faire de lui votre partenaire.</value>
+  </data>
+
+  <data name="POLICEDEPARTMENT_IN_POLICE_DEPARTMENT" xml:space="preserve">
+    <value>Ceci est un poste de police. Appuyez sur ~INPUT_PICKUP~ pour voir une introduction.</value>
+  </data>
+
+  <data name="POLICEDEPARTMENT_IN_TUTORIAL_CHECKPOINT" xml:space="preserve">
+    <value>Appuyez sur ~KEY_TUTORIAL_START_POLICE_DEPARTMENT~ pour démarrer le tutoriel.</value>
+  </data>
+
+  <data name="POLICE_COMPUTER_DISABLE_ANPR" xml:space="preserve">
+    <value>Désactiver LAPI (ANPR)</value>
+  </data>
+
+  <data name="POLICE_COMPUTER_ENABLE_ANPR" xml:space="preserve">
+    <value>Activer LAPI (ANPR)</value>
+  </data>
+
+  <data name="POLICE_COMPUTER_INVALID_PASSWORD" xml:space="preserve">
+    <value>Mot de passe invalide.</value>
+  </data>
+
+  <data name="POLICE_SCANNER_CONTROL" xml:space="preserve">
+    <value>CENTRAL</value>
+  </data>
+
+  <data name="POLICE_SCANNER_HELI_DOWN" xml:space="preserve">
+    <value>À toutes les unités, nous avons un hélicoptère à terre dans {0}.</value>
+  </data>
+
+  <data name="POLICE_SCANNER_OFFICER" xml:space="preserve">
+    <value>Agent</value>
+  </data>
+
+  <data name="POLICE_SCANNER_OFFICER_ATTACKED" xml:space="preserve">
+    <value>À toutes les unités, nous avons une agression sur un policier dans {0}.</value>
+  </data>
+
+  <data name="POLICE_SCANNER_OFFICER_DOWN" xml:space="preserve">
+    <value>Policier à terre dans {0}.</value>
+  </data>
+
+  <data name="POLICE_SCANNER_ROGER_THAT_INVESTIGATE" xml:space="preserve">
+    <value>Compris, j'enquête.</value>
+  </data>
+
+  <data name="POLICE_SCANNER_SUSPECT_ESCAPED" xml:space="preserve">
+    <value>Le suspect s'est échappé.</value>
+  </data>
+
+  <data name="POLICE_SCANNER_SUSPECT_IN_VEHICLE" xml:space="preserve">
+    <value>Le suspect s'est enfuit dans un {0} {1}.</value>
+  </data>
+
+  <data name="POLICE_SCANNER_SUSPECT_ON_FOOT" xml:space="preserve">
+    <value>Le suspect est à pieds.</value>
+  </data>
+
+  <data name="POLICE_SCANNER_SUSPECT_SPEEDING" xml:space="preserve">
+    <value>Attention, le suspect roule à {0} km/h.</value>
+  </data>
+
+  <data name="POLICE_SCANNER_VISUAL_LOST" xml:space="preserve">
+    <value>Perdu le visuel sur le suspect.</value>
+  </data>
+
+  <data name="POLICE_SCANNER_VISUAL_REGAINED" xml:space="preserve">
+    <value>Visuel retrouvé, le suspect se trouve dans {0}.</value>
+  </data>
+
+  <data name="PULLOVER_ABORTED_OUT_OF_CAR" xml:space="preserve">
+    <value>~r~Vous avez quitté le véhicule.</value>
+  </data>
+
+  <data name="PULLOVER_ASK_FOR_LICENSE" xml:space="preserve">
+    <value>~KEY_PULLOVER_LICENSE_YES~ Demander les papiers du conducteur.~n~~KEY_PULLOVER_LICENSE_NO~ Ne pas demander les papiers.</value>
+  </data>
+
+  <data name="PULLOVER_CHECK_SUSPECT_DATA" xml:space="preserve">
+    <value>Nom: {0} ~n~Date de naissance: {2}-{1}-{3}~n~~n~~KEY_PULLOVER_LICENSE_YES~ Vérifier les papiers sur l'ordinateur.~n~~KEY_PULLOVER_LICENSE_NO~ Ne pas vérifier.</value>
+  </data>
+
+  <data name="PULLOVER_CHECK_SUSPECT_DATA_2" xml:space="preserve">
+    <value>Conducteur: {0}~n~Date de naissance: {2}-{1}-{3}~n~Passager: {4}~n~Date de naissance: {6}-{5}-{7}~n~~n~~KEY_PULLOVER_LICENSE_YES~ Vérifier les papiers sur l'ordinateur.~n~~KEY_PULLOVER_LICENSE_NO~ Ne pas vérifier.</value>
+  </data>
+
+  <data name="PULLOVER_CHECK_SUSPECT_DATA_3" xml:space="preserve">
+    <value>Conducteur: {0}~n~Date de naissance: {2}-{1}-{3}~n~Passager: {8}~n~Date de naissance: {10}-{9}-{11}~n~~n~~KEY_PULLOVER_LICENSE_YES~ Vérifier les papiers sur l'ordinateur.~n~~KEY_PULLOVER_LICENSE_NO~ Ne pas vérifier.</value>
+  </data>
+
+  <data name="PULLOVER_CITATION_PAID" xml:space="preserve">
+    <value>Le conducteur a payé le constat de ${0}.</value>
+  </data>
+
+  <data name="PULLOVER_EXIT_VEHICLE" xml:space="preserve">
+    <value>Descendez de votre véhicule.</value>
+  </data>
+
+  <data name="PULLOVER_PARK_BEHIND_VEHICLE" xml:space="preserve">
+    <value>Immobilisez-vous derri</value>
+  </data>
+
+  <data name="PULLOVER_SELECT_ACTION" xml:space="preserve">
+    <value>Donner une contravention (F9)~n~Demander au conducteur de sortir (F10)~n~Donner un avertissement (F11)</value>
+  </data>
+
+  <data name="PULLOVER_SELECT_REASON" xml:space="preserve">
+    <value>~KEY_DIALOG_1~ Véhicule en mauvaise état.~n~~KEY_DIALOG_2~ Conduite dangereuse.~n~~KEY_DIALOG_3~ Excès de vitesse.~n~~KEY_DIALOG_4~ Autre.</value>
+  </data>
+
+  <data name="PULLOVER_START" xml:space="preserve">
+    <value>Suivez le véhicule jusqu'à ce qu'il s'immobilise.~n~Pour ~r~annuler~w~, appuyez sur MAJUSCULE.</value>
+  </data>
+
+  <data name="PULLOVER_SUSPECT_LEFT_VEHICLE" xml:space="preserve">
+    <value>Maintenant que le suspect a quitté le véhicule, vous pouvez contrôler le suspect comme bon vous semble.</value>
+  </data>
+
+  <data name="PULLOVER_TAXI_LATE" xml:space="preserve">
+    <value>Merci de m'avoir fait perdre mon temps, monsieur l'agent!</value>
+  </data>
+
+  <data name="PULLOVER_TICKET_AMOUNT_OPTIONS" xml:space="preserve">
+    <value>~KEY_DIALOG_1~ $100~n~~KEY_DIALOG_2~ $60~n~~KEY_DIALOG_3~ $40</value>
+  </data>
+
+  <data name="PULLOVER_WALK_UP_TO_SUSPECT" xml:space="preserve">
+    <value>Rejoignez le conducteur.</value>
+  </data>
+
+  <data name="PURSUIT_PLAYER_JOIN" xml:space="preserve">
+    <value>Maintenez ~KEY_JOIN_PURSUIT~ pour vous joindre à la poursuite.</value>
+  </data>
+
+  <data name="PURSUIT_PLAYER_JOINED" xml:space="preserve">
+    <value>Vous vous êtes joint à la poursuite.</value>
+  </data>
+
+  <data name="PURSUIT_PLAYER_LEFT" xml:space="preserve">
+    <value>Vous avez abandonné la poursuite.</value>
+  </data>
+
+  <data name="ROADBLOCK_REQUESTED" xml:space="preserve">
+    <value>Central, j'ai besoin d'un barrage routier.</value>
+  </data>
+
+  <data name="SCENARIO_WORLD_EVENT" xml:space="preserve">
+    <value>Lors de votre patrouille, vous allez rencontrer des événements comme des ivrognes causant des problèmes, des poursuites ou d'autres policiers qui interceptent des suspects. Contrairement aux appels, vous pouvez interagir et quitter quand bon vous semble.</value>
+  </data>
+
+  <data name="TEXTWALL_INFO" xml:space="preserve">
+    <value>INFO</value>
+  </data>
+
+  <data name="TRUNK_FOUND_CC" xml:space="preserve">
+    <value>Vous avez trouvé des cartes de crédits volées dans le coffre.</value>
+  </data>
+
+  <data name="TRUNK_FOUND_NOTHING" xml:space="preserve">
+    <value>Le coffre est vide.</value>
+  </data>
+
+  <data name="TRUNK_FOUND_WEAPON" xml:space="preserve">
+    <value>Vous avez trouvé une arme chargée dans le coffre.</value>
+  </data>
+
+  <data name="TUTORIAL_ARREST_PEDS" xml:space="preserve">
+    <value>Bien, le ~r~suspect~w~ s'est arrêté. Vous pouvez l'arrêter en appuyant sur ~KEY_ARREST~ ou maintenez la touche pour plus d'options.</value>
+  </data>
+
+  <data name="TUTORIAL_CALLOUTS" xml:space="preserve">
+    <value>En patrouille, vous allez recevoir des appels. Vous pouvez les activer ou les désactiver en appuyant sur ~KEY_TOGGLE_BUSY~.</value>
+  </data>
+
+  <data name="TUTORIAL_DO_ARREST" xml:space="preserve">
+    <value>Le suspect avait des cartes de crédits volées. Arrêtez-~r~le~w~.</value>
+  </data>
+
+  <data name="TUTORIAL_DO_FRISK_STEP_1" xml:space="preserve">
+    <value>Visez le ~r~suspect~w~ à nouveau et maintenez la touche d'arrestation pour afficher plus d'options.</value>
+  </data>
+
+  <data name="TUTORIAL_DO_FRISK_STEP_2" xml:space="preserve">
+    <value>Maintenant, continuez à viser le ~r~suspect ~w~ et sélectionnez ~y~Fouiller~w~ dans la liste d'enquête.</value>
+  </data>
+
+  <data name="TUTORIAL_DO_GRAB" xml:space="preserve">
+    <value>Tenez le ~r~suspect~w~.</value>
+  </data>
+
+  <data name="TUTORIAL_DO_PULLOVER" xml:space="preserve">
+    <value>Approchez le ~r~véhicule~w~ et appuyez sur ~KEY_PULLOVER_START~ pour l'intercepter.</value>
+  </data>
+
+  <data name="TUTORIAL_DO_STOP" xml:space="preserve">
+    <value>Visez le ~r~suspect d'entrainement~w~ devant vous et ordonnez lui d'arrêter.</value>
+  </data>
+
+  <data name="TUTORIAL_DO_TAKE_PED_TO_CAR" xml:space="preserve">
+    <value>Amenez maintenant le ~r~suspect~w~ à votre ~b~véhicule de patrouille~w~ et placez-le à l'intérieur.</value>
+  </data>
+
+  <data name="TUTORIAL_FAILED_OBJECTIVE" xml:space="preserve">
+    <value>~r~Ceci n'est pas votre objectif.</value>
+  </data>
+
+  <data name="TUTORIAL_PED_CUFFED" xml:space="preserve">
+    <value>Bien joué. Le suspect a été arrêté et est maintenant prêt à être transporté vers le poste de police.</value>
+  </data>
+
+  <data name="TUTORIAL_PED_GRABBING" xml:space="preserve">
+    <value>Vous pouvez tenir les suspects arrêtés en les approchant et en appuyant sur ~KEY_ARREST~. Ceci vous permettra de les déplacer et les placer à l'intérieur de votre véhicule de police.</value>
+  </data>
+
+  <data name="TUTORIAL_PED_TAKEN_TO_CAR" xml:space="preserve">
+    <value>Bien joué, vous savez maintenant comment arrêter, fouiller et transporter les suspects. Dans un bref instant, la partie finale de se tutoriel vous guidera pour les interceptions des véhicules routiers.</value>
+  </data>
+
+  <data name="TUTORIAL_PISTOL" xml:space="preserve">
+    <value>Sélectionnez votre arme de service (pistolet).</value>
+  </data>
+
+  <data name="TUTORIAL_READY" xml:space="preserve">
+    <value>Bien joué. Vous avez compléter le tutoriel avec succès et êtes désormais prêt à maintenir la loi dans Liberty City.</value>
+  </data>
+
+  <data name="TUTORIAL_SOUND_HORN" xml:space="preserve">
+    <value>En appuyant sur votre klaxon lorsque votre sirène est en fonction forcera le véhicule à s'arrêter immédiatement.</value>
+  </data>
+
+  <data name="TUTORIAL_STOP_PEDS" xml:space="preserve">
+    <value>Vous pouvez ordonner à quiconque d'arrêter en les visant et en appuyant sur ~KEY_ARREST~. Ceci fonctionne avec et sans arme.</value>
+  </data>
+
+  <data name="TUTORIAL_WELCOME" xml:space="preserve">
+    <value>Bienvenue au tutoriel de LCPDFR 1.0. Ce court tutoriel vous guidera au travers des parties les plus essentielles de la patrouille policière dans Liberty City et vous aidera à faire vos premiers pas en tant qu'agent de police.</value>
+  </data>
+
+  <data name="VEHICLE_DOOR_OPEN" xml:space="preserve">
+    <value>Appuyez sur ~KEY_OPEN_TRUNK~ pour ouvrir la porte.</value>
+  </data>
+
+  <data name="VEHICLE_DOOR_REMOVE_F" xml:space="preserve">
+    <value>Appuyez sur ~KEY_OPEN_TRUNK~ pour la retirer du véhicule.</value>
+  </data>
+
+  <data name="VEHICLE_DOOR_REMOVE_M" xml:space="preserve">
+    <value>Appuyez sur ~KEY_OPEN_TRUNK~ pour le retirer du véhicule.</value>
+  </data>
+
+  <data name="VEHICLE_TRUNK_OPEN" xml:space="preserve">
+    <value>Vous pouvez inspecter le coffre des véhicules en appuyant sur ~KEY_OPEN_TRUNK~ pour l'ouvrir.</value>
+  </data>
+
+</root>

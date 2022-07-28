@@ -1,0 +1,13 @@
+﻿=== Police Department ===
+
+- [Fixed] Blip doesn't fade out in interior (look into internal blip alpha property and try to make an AdvHook function to change alpha value?)
+- Introduction can't be aborted using controller (probably because game keys don't work in cinema mode)
+
+=== PoolUpdaterUnmanaged ===
+
+- [Should be fixed] Possible chance of two CPed instances per handle, when we create ped ourselves and they get crawled by the updater as well
+- [Should be fixed] Possible chance of two CPed instances per handle, when we create a new vehicle and warp existing ped into it, they could be considered as new ones
+
+=== Peformance ===
+
+- Some natives should better be wrapped into AdvHook for performance reasons: HasSpottedChar, HasSpottedCharInFront, DrawColouredCylinder, IsUsingController, (IsPlayerTargettingAnything)

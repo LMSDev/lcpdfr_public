@@ -1,0 +1,603 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{05F2BC26-6F84-4398-8B28-4796E6D17D46}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LCPD_First_Response</RootNamespace>
+    <AssemblyName>LCPD First Response</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+    <DocumentationFile>bin\Release\LCPD First Response.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <DocumentationFile>bin\Release\LCPD First Response.XML</DocumentationFile>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AdvancedHook, Version=0.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AdvancedHook.dll</HintPath>
+    </Reference>
+    <Reference Include="Lidgren.Network, Version=2011.3.12.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Lidgren.Network.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="protobuf-net, Version=2.0.0.480, Culture=neutral, PublicKeyToken=257b51d87d2e4d67, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\protobuf-net.dll</HintPath>
+    </Reference>
+    <Reference Include="ScriptHookDotNet, Version=0.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\ScriptHookDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="SlimDX, Version=4.0.13.43, Culture=neutral, PublicKeyToken=b1b0c32fd1ffe4f9, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dependencies\SlimDX.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Speech" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Engine\Authentication.cs" />
+    <Compile Include="Engine\BaseComponent.cs" />
+    <Compile Include="Engine\Common.cs" />
+    <Compile Include="Engine\DebugHelper.cs" />
+    <Compile Include="Engine\DevTools\BrakeTesting.cs" />
+    <Compile Include="Engine\DevTools\DevTools.cs" />
+    <Compile Include="Engine\DevTools\RoadblockHelper.cs" />
+    <Compile Include="Engine\Encryption.cs" />
+    <Compile Include="Engine\GUI\ICanHaveControls.cs" />
+    <Compile Include="Engine\GUI\GroupBox.cs" />
+    <Compile Include="Engine\GUI\Gui.cs" />
+    <Compile Include="Engine\GUI\HelpBox.cs" />
+    <Compile Include="Engine\GUI\Image.cs" />
+    <Compile Include="Engine\GUI\ListBox.cs" />
+    <Compile Include="Engine\GUI\TextBuilder.cs" />
+    <Compile Include="Engine\Input\ConsoleCommandAssigner.cs" />
+    <Compile Include="Engine\Input\ConsoleCommandAttribute.cs" />
+    <Compile Include="Engine\Input\Controller.cs" />
+    <Compile Include="Engine\Input\ControllerKey.cs" />
+    <Compile Include="Engine\Input\SpeechRecognition.cs" />
+    <Compile Include="Engine\IO\FileParser.cs" />
+    <Compile Include="Engine\IO\IniFile.cs" />
+    <Compile Include="Engine\IO\IniSection.cs" />
+    <Compile Include="Engine\IO\IniValue.cs" />
+    <Compile Include="Engine\IO\Old.cs" />
+    <Compile Include="Engine\IO\PlaybackControl.cs" />
+    <Compile Include="Engine\IO\SettingsFile.cs" />
+    <Compile Include="Engine\MemoryValidator.cs" />
+    <Compile Include="Engine\Networking\DynamicDataExtension.cs" />
+    <Compile Include="Engine\Networking\MessageCache.cs" />
+    <Compile Include="Engine\Networking\NetworkSession.cs" />
+    <Compile Include="Engine\Networking\QueueMessageHandler\IQueueMessageHandler.cs" />
+    <Compile Include="Engine\Networking\QueueMessageHandler\ReportYourLocation.cs" />
+    <Compile Include="Engine\Networking\QueueMessageHandler\WallMessage.cs" />
+    <Compile Include="Engine\Networking\ReceivedUserMessage.cs" />
+    <Compile Include="Engine\ResourceHelper.cs" />
+    <Compile Include="Engine\Scripting\Animation.cs" />
+    <Compile Include="Engine\Scripting\AreaHelper.cs" />
+    <Compile Include="Engine\Scripting\Entities\ArrowCheckpoint.cs" />
+    <Compile Include="Engine\Scripting\Entities\Extensions &amp; Wrappers\BlipExtension.cs" />
+    <Compile Include="Engine\Scripting\PopulationManager.cs" />
+    <Compile Include="Engine\Scripting\Entities\Voice.cs" />
+    <Compile Include="Engine\Scripting\Entities\SearchArea.cs" />
+    <Compile Include="Engine\Scripting\Entities\CPickup.cs" />
+    <Compile Include="Engine\Scripting\Entities\CPlayerGeneric.cs" />
+    <Compile Include="Engine\Scripting\Entities\Extensions &amp; Wrappers\PickupBase.cs" />
+    <Compile Include="Engine\Scripting\Entities\Extensions &amp; Wrappers\PlayerBase.cs" />
+    <Compile Include="Engine\Scripting\Entities\Persona.cs" />
+    <Compile Include="Engine\Scripting\Entities\SirenManager.cs" />
+    <Compile Include="Engine\Scripting\Events\EventAmbientFootChase.cs" />
+    <Compile Include="Engine\Scripting\Events\EventJoinedNetworkGame.cs" />
+    <Compile Include="Engine\Scripting\Events\EventOfficerAttacked.cs" />
+    <Compile Include="Engine\Scripting\Events\EventHelicopterDown.cs" />
+    <Compile Include="Engine\Scripting\Events\EventCriminalSpeeding.cs" />
+    <Compile Include="Engine\Scripting\Events\EventArrestedPedSittingInPlayerVehicle.cs" />
+    <Compile Include="Engine\Scripting\Events\EventCriminalEnteredVehicle.cs" />
+    <Compile Include="Engine\Scripting\Events\EventCriminalEscaped.cs" />
+    <Compile Include="Engine\Scripting\Events\EventCriminalLeftVehicle.cs" />
+    <Compile Include="Engine\Scripting\Events\EventNetworkConnectionEstablished.cs" />
+    <Compile Include="Engine\Scripting\Events\EventNetworkConnectionFailed.cs" />
+    <Compile Include="Engine\Scripting\Events\EventNewPedCreated.cs" />
+    <Compile Include="Engine\Scripting\Events\EventNewVehicleCreated.cs" />
+    <Compile Include="Engine\Scripting\Events\EventOfficerDown.cs" />
+    <Compile Include="Engine\Scripting\Events\EventPoliceToleranceDecrease.cs" />
+    <Compile Include="Engine\Scripting\Events\EventVisualLost.cs" />
+    <Compile Include="Engine\Scripting\LicenseNumber.cs" />
+    <Compile Include="Engine\Scripting\Plugins\AssemblyHelper.cs" />
+    <Compile Include="Engine\Scripting\Plugins\ContentManagerOptions.cs" />
+    <Compile Include="Engine\Scripting\Plugins\GameScript.cs" />
+    <Compile Include="Engine\Scripting\Plugins\PluginInfoAttribute.cs" />
+    <Compile Include="Engine\Scripting\Plugins\BaseScript.cs" />
+    <Compile Include="Engine\Scripting\Plugins\ScriptInfoAttribute.cs" />
+    <Compile Include="Engine\Scripting\Plugins\ScriptManager.cs" />
+    <Compile Include="Engine\Scripting\Route.cs" />
+    <Compile Include="Engine\Scripting\Scenarios\ScenarioCopHelicopterInvestigate.cs" />
+    <Compile Include="Engine\Scripting\Scenarios\ScenarioSuspectTransport.cs" />
+    <Compile Include="Engine\Scripting\Tasks\IExtendedIntelligence.cs" />
+    <Compile Include="Engine\Scripting\Tasks\TaskAdvancedDrivingAI.cs" />
+    <Compile Include="Engine\Scripting\Tasks\TaskCopChasePedOnFoot.cs" />
+    <Compile Include="Engine\Scripting\Tasks\TaskCopSearchForPedInVehicle.cs" />
+    <Compile Include="Engine\Scripting\Tasks\TaskCopSearchForPedOnFoot.cs" />
+    <Compile Include="Engine\Scripting\Tasks\TaskCopTasePed.cs" />
+    <Compile Include="Engine\Scripting\Tasks\TaskDriveDrunk.cs" />
+    <Compile Include="Engine\Scripting\Tasks\TaskFlashlight.cs" />
+    <Compile Include="Engine\Scripting\Tasks\TaskLeaveScene.cs" />
+    <Compile Include="Engine\Scripting\Tasks\TaskPlayAnimationAndRepeat.cs" />
+    <Compile Include="Engine\Scripting\Tasks\TaskWalkDrunk.cs" />
+    <Compile Include="Engine\Scripting\Tasks\TaskWalkieTalkie.cs" />
+    <Compile Include="Engine\Scripting\Tasks\TaskTreatPed.cs" />
+    <Compile Include="Engine\Scripting\Tasks\TaskArgue.cs" />
+    <Compile Include="Engine\Scripting\Tasks\TaskChat.cs" />
+    <Compile Include="Engine\Scripting\Tasks\TaskCopUpdateVisualForTarget.cs" />
+    <Compile Include="Engine\Scripting\Tasks\TaskFightToPoint.cs" />
+    <Compile Include="Engine\Scripting\Tasks\TaskCopHelicopter.cs" />
+    <Compile Include="Engine\Scripting\Tasks\TaskHeliFlyOff.cs" />
+    <Compile Include="Engine\Scripting\Tasks\TaskHeliFollowRoute.cs" />
+    <Compile Include="Engine\Scripting\Tasks\TaskPlayAnimation.cs" />
+    <Compile Include="Engine\Scripting\Tasks\TaskPlaySecondaryUpperAnimationAndRepeat.cs" />
+    <Compile Include="Engine\Scripting\Tracer.cs" />
+    <Compile Include="Engine\SequencedList.cs" />
+    <Compile Include="Engine\Timers\Timer.cs" />
+    <Compile Include="LCPDFR\AdvancedReflection.cs" />
+    <Compile Include="LCPDFR\API\ArrowCheckpoint.cs" />
+    <Compile Include="LCPDFR\API\Networking.cs" />
+    <Compile Include="LCPDFR\API\WorldEvent.cs" />
+    <Compile Include="LCPDFR\Callouts\BoatPursuit.cs" />
+    <Compile Include="LCPDFR\Callouts\Disturbance.cs" />
+    <Compile Include="LCPDFR\Callouts\DrunkDriver.cs" />
+    <Compile Include="LCPDFR\GUI\UpdateAvailableForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LCPDFR\GUI\UpdateAvailableForm.Designer.cs">
+      <DependentUpon>UpdateAvailableForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LCPDFR\GUI\UpdateAvailableFormHandler.cs" />
+    <Compile Include="LCPDFR\GUI\WebSite.cs" />
+    <Compile Include="LCPDFR\Networking\Networking.cs" />
+    <Compile Include="LCPDFR\Scripts\AimMarker.cs" />
+    <Compile Include="LCPDFR\API\LBlip.cs" />
+    <Compile Include="LCPDFR\API\LPed.cs" />
+    <Compile Include="LCPDFR\API\LPedBase.cs" />
+    <Compile Include="LCPDFR\API\LPlayerBase.cs" />
+    <Compile Include="LCPDFR\API\LVehicle.cs" />
+    <Compile Include="LCPDFR\API\LPlayer.cs" />
+    <Compile Include="LCPDFR\API\LVehicleBase.cs" />
+    <Compile Include="LCPDFR\API\PersonaData.cs" />
+    <Compile Include="LCPDFR\AudioDatabase.cs" />
+    <Compile Include="LCPDFR\AudioHelper.cs" />
+    <Compile Include="LCPDFR\Callouts\ApartmentRape.cs" />
+    <Compile Include="LCPDFR\Callouts\Mugging.cs" />
+    <Compile Include="LCPDFR\Callouts\DrugDeal.cs" />
+    <Compile Include="LCPDFR\Callouts\Robbery.cs" />
+    <Compile Include="LCPDFR\Callouts\Shootout.cs" />
+    <Compile Include="LCPDFR\Callouts\Suicidal.cs" />
+    <Compile Include="LCPDFR\CultureHelper.cs" />
+    <Compile Include="LCPDFR\Globals.cs" />
+    <Compile Include="LCPDFR\GUI\PursuitMenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LCPDFR\GUI\PursuitMenuForm.Designer.cs">
+      <DependentUpon>PursuitMenuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LCPDFR\GUI\PursuitMenuFormHandler.cs" />
+    <Compile Include="LCPDFR\GUI\TextHelper.cs" />
+    <Compile Include="LCPDFR\PoliceScanner.cs" />
+    <Compile Include="Engine\Scripting\RoadblockManager.cs" />
+    <Compile Include="Engine\IO\SoundEngine.cs" />
+    <Compile Include="Engine\Scripting\Tasks\TaskLookAtPosition.cs" />
+    <Compile Include="Engine\Scripting\Tasks\TaskParkVehicle.cs" />
+    <Compile Include="Engine\Timers\DelayedCaller.cs" />
+    <Compile Include="Engine\Scripting\Entities\CEntity.cs" />
+    <Compile Include="Engine\Scripting\Entities\CModel.cs" />
+    <Compile Include="Engine\Scripting\Entities\CModelInfo.cs" />
+    <Compile Include="Engine\Scripting\Entities\CPed.cs" />
+    <Compile Include="Engine\Scripting\Entities\Extensions &amp; Wrappers\CPedExtension.cs" />
+    <Compile Include="Engine\Scripting\Entities\Extensions &amp; Wrappers\CVehicleExtension.cs" />
+    <Compile Include="Engine\Scripting\Entities\Extensions &amp; Wrappers\PedBase.cs" />
+    <Compile Include="Engine\Scripting\Entities\Extensions &amp; Wrappers\PedTasksExtension.cs" />
+    <Compile Include="Engine\Scripting\Entities\CPlayer.cs" />
+    <Compile Include="Engine\Scripting\Entities\CVehicle.cs" />
+    <Compile Include="Engine\Scripting\Entities\Extensions &amp; Wrappers\VehicleBase.cs" />
+    <Compile Include="Engine\Scripting\Entities\ModelManager.cs" />
+    <Compile Include="Engine\Scripting\Entities\PedData.cs" />
+    <Compile Include="Engine\Scripting\Entities\PedDataCop.cs" />
+    <Compile Include="Engine\Scripting\Entities\PoolUpdaterUnmanaged.cs" />
+    <Compile Include="Engine\ExceptionHandler.cs" />
+    <Compile Include="Engine\Exceptions.cs" />
+    <Compile Include="Engine\GUI\Button.cs" />
+    <Compile Include="Engine\GUI\Control.cs" />
+    <Compile Include="Engine\GUI\Font.cs" />
+    <Compile Include="Engine\GUI\Form.cs" />
+    <Compile Include="Engine\GUI\Forms\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Engine\GUI\Forms\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Engine\GUI\Forms\Form1Handler.cs" />
+    <Compile Include="Engine\GUI\FormsManager.cs" />
+    <Compile Include="Engine\GUI\Label.cs" />
+    <Compile Include="Engine\GUI\Mouse.cs" />
+    <Compile Include="Engine\GUI\TextBox.cs" />
+    <Compile Include="Engine\Timers\ICoreTickable.cs" />
+    <Compile Include="Engine\Timers\IScheduledAction.cs" />
+    <Compile Include="Engine\Timers\ISystemTask.cs" />
+    <Compile Include="Engine\Timers\ITickable.cs" />
+    <Compile Include="Engine\Input\KeyWatchDog.cs" />
+    <Compile Include="Engine\Log.cs" />
+    <Compile Include="Engine\Mouse.cs" />
+    <Compile Include="Engine\Networking\ClientHandler.cs" />
+    <Compile Include="Engine\Networking\ServerHandler.cs" />
+    <Compile Include="Engine\Networking\ServerCommunication.cs" />
+    <Compile Include="Engine\Scripting\Chase.cs" />
+    <Compile Include="Engine\Scripting\CopManager.cs" />
+    <Compile Include="Engine\Scripting\CopRequest.cs" />
+    <Compile Include="Engine\Scripting\Cutscene.cs" />
+    <Compile Include="Engine\Scripting\Events\Event.cs" />
+    <Compile Include="Engine\Scripting\Events\EventArmedCriminal.cs" />
+    <Compile Include="Engine\Scripting\Events\EventCopCreated.cs" />
+    <Compile Include="Engine\Scripting\Events\EventCopReadyToChase.cs" />
+    <Compile Include="Engine\Scripting\Events\EventCriminalSpotted.cs" />
+    <Compile Include="Engine\Scripting\Events\EventFleeingCriminal.cs" />
+    <Compile Include="Engine\Scripting\Events\EventPedBeingArrested.cs" />
+    <Compile Include="Engine\Scripting\Events\EventPedDead.cs" />
+    <Compile Include="Engine\Scripting\Events\EventPedToChase.cs" />
+    <Compile Include="Engine\Scripting\ICanOwnEntities.cs" />
+    <Compile Include="Engine\Scripting\IPedController.cs" />
+    <Compile Include="Engine\Scripting\Plugins\ContentManager.cs" />
+    <Compile Include="Engine\Scripting\Plugins\IContentManagable.cs" />
+    <Compile Include="Engine\Scripting\Plugins\ITimeable.cs" />
+    <Compile Include="Engine\Scripting\Plugins\Plugin.cs" />
+    <Compile Include="Engine\Scripting\Plugins\PluginManager.cs" />
+    <Compile Include="Engine\Scripting\Plugins\TimerManager.cs" />
+    <Compile Include="Engine\Scripting\Scenarios\Scenario.cs" />
+    <Compile Include="Engine\Scripting\Scenarios\ScenarioArrestedPedAndDriveAway.cs" />
+    <Compile Include="Engine\Scripting\Scenarios\ScenarioCopsInvestigateCrimeScene.cs" />
+    <Compile Include="Engine\Scripting\Scenarios\ScenarioHostageTaking.cs" />
+    <Compile Include="Engine\Scripting\Tasks\IQueryableTask.cs" />
+    <Compile Include="Engine\Scripting\Tasks\PedIntelligence.cs" />
+    <Compile Include="Engine\Pool.cs" />
+    <Compile Include="Engine\Pools.cs" />
+    <Compile Include="Engine\Scripting\Tasks\PedTask.cs" />
+    <Compile Include="Engine\Scripting\Tasks\TaskAnonymous.cs" />
+    <Compile Include="Engine\Scripting\Tasks\TaskArrestedPedAndDriveAway.cs" />
+    <Compile Include="Engine\Scripting\Tasks\TaskArrestPed.cs" />
+    <Compile Include="Engine\Scripting\Tasks\TaskBeingBusted.cs" />
+    <Compile Include="Engine\Scripting\Tasks\TaskBustPed.cs" />
+    <Compile Include="Engine\Scripting\Tasks\TaskCop.cs" />
+    <Compile Include="Engine\Scripting\Tasks\TaskCopChasePed.cs" />
+    <Compile Include="Engine\Scripting\Tasks\TaskCuffPed.cs" />
+    <Compile Include="Engine\Scripting\Tasks\TaskFleeEvadeCops.cs" />
+    <Compile Include="Engine\Scripting\Tasks\TaskFleeEvadeCopsInVehicle.cs" />
+    <Compile Include="Engine\Scripting\Tasks\TaskFleeEvadeCopsOnFoot.cs" />
+    <Compile Include="Engine\Scripting\Tasks\TaskGetInVehicle.cs" />
+    <Compile Include="Engine\Scripting\Tasks\TaskInfo.cs" />
+    <Compile Include="Engine\Scripting\Tasks\TaskInvestigate.cs" />
+    <Compile Include="Engine\Scripting\Tasks\TaskLookAtPed.cs" />
+    <Compile Include="Engine\Scripting\Tasks\TaskManager.cs" />
+    <Compile Include="Engine\Scripting\Tasks\TaskMarkAsNoLongerNeeded.cs" />
+    <Compile Include="Engine\Scripting\Tasks\TaskScenario.cs" />
+    <Compile Include="Engine\Scripting\Tasks\TaskSequence.cs" />
+    <Compile Include="Engine\Scripting\Tasks\TaskTimed.cs" />
+    <Compile Include="Engine\Scripting\Tasks\TaskUseSequence.cs" />
+    <Compile Include="Engine\Main.cs" />
+    <Compile Include="Engine\Networking\NetworkManager.cs" />
+    <Compile Include="Engine\Scripting\Native\Natives.cs" />
+    <Compile Include="Engine\Input\Key.cs" />
+    <Compile Include="Engine\Scripting\Tasks\TaskWaitUntilPedIsInVehicle.cs" />
+    <Compile Include="Engine\Scripting\Tasks\TaskWander.cs" />
+    <Compile Include="Engine\Scripting\Wanted.cs" />
+    <Compile Include="Engine\Timers\ScheduledAction.cs" />
+    <Compile Include="Engine\Timers\ScheduledActionBase.cs" />
+    <Compile Include="Engine\Timers\ActionScheduler.cs" />
+    <Compile Include="Engine\Timers\SystemTask.cs" />
+    <Compile Include="Engine\Timers\SystemTaskTimed.cs" />
+    <Compile Include="Engine\Timers\TaskManager.cs" />
+    <Compile Include="Engine\Timers\NonAutomaticTimer.cs" />
+    <Compile Include="LCPDFR\API\Functions.cs" />
+    <Compile Include="LCPDFR\API\LHandle.cs" />
+    <Compile Include="LCPDFR\Callouts\Callout.cs" />
+    <Compile Include="LCPDFR\Callouts\CalloutInfoAttribute.cs" />
+    <Compile Include="LCPDFR\Callouts\CalloutManager.cs" />
+    <Compile Include="LCPDFR\Callouts\TestCallout.cs" />
+    <Compile Include="LCPDFR\GUI\TextWallFormHandler.cs" />
+    <Compile Include="LCPDFR\GUI\TextWallForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LCPDFR\GUI\TextWallForm.Designer.cs">
+      <DependentUpon>TextWallForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LCPDFR\Input\KeyAtrribute.cs" />
+    <Compile Include="LCPDFR\Input\KeyHandler.cs" />
+    <Compile Include="LCPDFR\Input\LCPDFRKeys.cs" />
+    <Compile Include="LCPDFR\Scripts\Ambient.cs" />
+    <Compile Include="LCPDFR\Scripts\AreaBlocker.cs" />
+    <Compile Include="LCPDFR\Scripts\Arrest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LCPDFR\Scripts\AimingManager.cs" />
+    <Compile Include="LCPDFR\Scripts\BackupManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LCPDFR\Scripts\CameraHelper.cs" />
+    <Compile Include="LCPDFR\Scripts\CheckpointControl.cs" />
+    <Compile Include="LCPDFR\Scripts\EasterEggs.cs" />
+    <Compile Include="LCPDFR\Scripts\Events\EventPartnerWantsToEnterVehicle.cs" />
+    <Compile Include="LCPDFR\Scripts\Events\EventPartnerWantsToSupportArresting.cs" />
+    <Compile Include="LCPDFR\Scripts\Events\EventPlayerWarped.cs" />
+    <Compile Include="LCPDFR\Scripts\FastWalk.cs" />
+    <Compile Include="LCPDFR\Scripts\Events\EventPlayerStartedArrest.cs" />
+    <Compile Include="LCPDFR\Scripts\Events\EventPlayerStartedFrisk.cs" />
+    <Compile Include="LCPDFR\Scripts\Events\EventPlayerStartedPullover.cs" />
+    <Compile Include="LCPDFR\Scripts\Frisk.cs" />
+    <Compile Include="LCPDFR\Scripts\GoOnDuty.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LCPDFR\LCPDFRPlayer.cs" />
+    <Compile Include="LCPDFR\Scripts\Grab.cs" />
+    <Compile Include="LCPDFR\Scripts\Hardcore.cs" />
+    <Compile Include="LCPDFR\Scripts\KeyBindings.cs" />
+    <Compile Include="LCPDFR\Scripts\LicenseNumberScanner.cs" />
+    <Compile Include="Engine\Scripting\LightHelper.cs" />
+    <Compile Include="LCPDFR\Scripts\Lights.cs" />
+    <Compile Include="LCPDFR\Scripts\NeverendingRiot.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LCPDFR\Scripts\ParkingTickets.cs" />
+    <Compile Include="LCPDFR\Scripts\Partner.cs" />
+    <Compile Include="LCPDFR\Scripts\Partners\AnonymousBehavior.cs" />
+    <Compile Include="LCPDFR\Scripts\Partners\Behavior.cs" />
+    <Compile Include="LCPDFR\Scripts\Partners\BehaviorCoverTarget.cs" />
+    <Compile Include="LCPDFR\Scripts\Partners\BehaviorFollowPlayerInVehicle.cs" />
+    <Compile Include="LCPDFR\Scripts\Partners\BehaviorHoldPedAtGunpoint.cs" />
+    <Compile Include="LCPDFR\Scripts\Partners\BehaviorSupportArrest.cs" />
+    <Compile Include="LCPDFR\Scripts\Partners\BehaviorSupportPullover.cs" />
+    <Compile Include="LCPDFR\Scripts\Partners\Partner.cs" />
+    <Compile Include="LCPDFR\Scripts\Partners\PartnerIntelligence.cs" />
+    <Compile Include="LCPDFR\Scripts\Partners\PartnerManager.cs" />
+    <Compile Include="LCPDFR\Scripts\PedComponentSelector.cs" />
+    <Compile Include="LCPDFR\Scripts\PlayerSuspectTransport.cs" />
+    <Compile Include="LCPDFR\Scripts\PoliceComputer\ChatClient.cs" />
+    <Compile Include="LCPDFR\Scripts\PoliceComputer\ChatForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LCPDFR\Scripts\PoliceComputer\ChatForm.Designer.cs">
+      <DependentUpon>ChatForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LCPDFR\Scripts\PoliceComputer\ChatFormHandler.cs" />
+    <Compile Include="LCPDFR\Scripts\PoliceComputer\LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LCPDFR\Scripts\PoliceComputer\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LCPDFR\Scripts\PoliceComputer\LoginFormHandler.cs" />
+    <Compile Include="LCPDFR\Scripts\PoliceComputer\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LCPDFR\Scripts\PoliceComputer\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LCPDFR\Scripts\PoliceComputer\MainFormHandler.cs" />
+    <Compile Include="LCPDFR\Scripts\PoliceComputer\MessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LCPDFR\Scripts\PoliceComputer\MessageBox.Designer.cs">
+      <DependentUpon>MessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LCPDFR\Scripts\PoliceComputer\MessageBoxHandler.cs" />
+    <Compile Include="LCPDFR\Scripts\PoliceComputer\PoliceComputer.cs" />
+    <Compile Include="LCPDFR\Scripts\PoliceComputer\SearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LCPDFR\Scripts\PoliceComputer\SearchForm.Designer.cs">
+      <DependentUpon>SearchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LCPDFR\Scripts\PoliceComputer\SearchFormHandler.cs" />
+    <Compile Include="LCPDFR\Scripts\PoliceDepartment.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LCPDFR\Scripts\PoliceDepartmentManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LCPDFR\Scripts\Pullover.cs" />
+    <Compile Include="LCPDFR\Scripts\PulloverManager.cs" />
+    <Compile Include="LCPDFR\Scripts\Pursuit.cs" />
+    <Compile Include="LCPDFR\Scripts\QuickActionMenu\MenuRendererBase.cs" />
+    <Compile Include="LCPDFR\Scripts\QuickActionMenu\QuickActionMenu.cs" />
+    <Compile Include="LCPDFR\Scripts\QuickActionMenu\QuickActionMenuGroup.cs" />
+    <Compile Include="LCPDFR\Scripts\QuickActionMenu\QuickActionMenuGroupStyle.cs" />
+    <Compile Include="LCPDFR\Scripts\QuickActionMenu\QuickActionMenuOption.cs" />
+    <Compile Include="LCPDFR\Scripts\ReportEvents.cs" />
+    <Compile Include="LCPDFR\Scripts\Savegame.cs" />
+    <Compile Include="LCPDFR\Scripts\Scenarios\AmbientScenarioManager.cs" />
+    <Compile Include="LCPDFR\Scripts\Scenarios\IAmbientScenario.cs" />
+    <Compile Include="LCPDFR\Scripts\Scenarios\ScenarioCopPullover.cs" />
+    <Compile Include="LCPDFR\Scripts\Scenarios\ScenarioDrugdeal.cs" />
+    <Compile Include="LCPDFR\Scripts\Scenarios\ScenarioDrunkDriver.cs" />
+    <Compile Include="LCPDFR\Scripts\Scenarios\ScenarioDrunkGuy.cs" />
+    <Compile Include="LCPDFR\Scripts\Scenarios\ScenarioPlayerAssault.cs" />
+    <Compile Include="LCPDFR\Scripts\Scenarios\ScenarioRandomPursuit.cs" />
+    <Compile Include="LCPDFR\Scripts\Taser.cs" />
+    <Compile Include="LCPDFR\Scripts\Tutorial.cs" />
+    <Compile Include="LCPDFR\Scripts\VehicleTrunk.cs" />
+    <Compile Include="LCPDFR\Settings.cs" />
+    <Compile Include="LCPDFR\Main.cs" />
+    <Compile Include="LCPDFR\Stats.cs" />
+    <Compile Include="LCPDFR\UpdateCheck.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LCPDFR Loader\LCPDFR Loader.csproj">
+      <Project>{E12EC38E-374F-41F0-AF76-AFF046C9A3B7}</Project>
+      <Name>LCPDFR Loader</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Networking\Networking.csproj">
+      <Project>{d8bee2a9-c9d7-4ded-8e95-613671c78532}</Project>
+      <Name>Networking</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="LCPDFR\GUI\PursuitMenuForm.resx">
+      <DependentUpon>PursuitMenuForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LCPDFR\GUI\UpdateAvailableForm.resx">
+      <DependentUpon>UpdateAvailableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LCPDFR\Scripts\PoliceComputer\ChatForm.resx">
+      <DependentUpon>ChatForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LCPDFR\Scripts\PoliceComputer\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LCPDFR\Scripts\PoliceComputer\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LCPDFR\Scripts\PoliceComputer\MessageBox.resx">
+      <DependentUpon>MessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LCPDFR\Scripts\PoliceComputer\SearchForm.resx">
+      <DependentUpon>SearchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Translations.fr-FR.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Resources\boatpos.dat" />
+    <None Include="Resources\Names.dat" />
+    <Content Include="KnownBugs.txt" />
+    <EmbeddedResource Include="Resources\Phone_icon_disconnect.png" />
+    <Content Include="ToDo.txt" />
+    <EmbeddedResource Include="Resources\Translations.de-DE.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Translations.en-US.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Engine\GUI\Forms\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LCPDFR\GUI\TextWallForm.resx">
+      <DependentUpon>TextWallForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Coordinates.dat" />
+    <None Include="Resources\PoliceDepartments.dat" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

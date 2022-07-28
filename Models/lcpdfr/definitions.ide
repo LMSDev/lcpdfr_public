@@ -1,0 +1,7 @@
+weap
+lcpdfr_taser,	lcpdfr_taser,	gun@handgun, 		1, 	30, 	0
+end
+
+amat
+lcpdfr_taser,	0,	CM_WEAPONS_PISTOL
+end

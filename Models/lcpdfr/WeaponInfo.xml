@@ -1,0 +1,39 @@
+<weaponinfo version="1">
+
+	<weapon type="UNUSED0">
+		<data slot="HANDGUN" firetype="INSTANT_HIT" damagetype="FIRE" group="PISTOL_SMALL" targetrange="8.0" weaponrange="8.0" clipsize="1" ammomax="1500" timebetweenshots="333">
+			<damage base="0" networkplayermod="3.0" networkpedmod="1.0"/>
+			<physics force="0.0"/>
+			<reload time="2000" fasttime="2000" crouchtime="2000"/>
+
+			<aiming accuracy="0.25">
+				<offset         x="0.0" y="1.0" z="0.0"/>
+				<crouchedoffset x="0.0"  y="1.0" z="0.0"/>
+				<reticule standing="0.65" ducked="0.55" scale="0.3"/>
+			</aiming>
+
+			<pickup regentime="120000" ammoonstreet="30"/>
+
+			<controller>
+				<rumble duration="110" intensity="0.02"/>
+			</controller>
+
+			<flags>
+				<flag>GUN</flag>
+				<flag>CAN_AIM</flag>
+				<flag>CAN_FREE_AIM</flag>
+				<flag>ANIM_RELOAD</flag>
+				<flag>ANIM_CROUCH_FIRE</flag>
+				<flag>SILENCED</flag>
+			</flags>
+		</data>
+
+		<assets model="lcpdfr_taser">
+			<anim group="gun@handgun" meleegroup1="firearm_core"/>
+			<effects>
+				<muzzle fx="ambient_flies_sparked"/>
+			</effects>
+		</assets>
+	</weapon>
+
+</weaponinfo>

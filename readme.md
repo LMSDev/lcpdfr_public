@@ -1,0 +1,1 @@
+The public code repository for the LCPD First Response modification for GTA IV developed by G17 Media from 2008-2015. Code release publicly in July 2022. Please see license for usage details.

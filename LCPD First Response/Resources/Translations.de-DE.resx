@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ARREST_CAN_ARREST_NOW" xml:space="preserve">
+    <value>Du kannst die anvisierte Person festnehmen, indem du ~INPUT_PICKUP~ drückst.</value>
+  </data>
+  <data name="ARREST_GET_A_VEHICLE" xml:space="preserve">
+    <value>Besorge ein Fahrzeug</value>
+  </data>
+  <data name="ARREST_MULTIPLE_SUSPECTS" xml:space="preserve">
+    <value>Ziele auf den Verdächtigen um eine Aktion auszuwählen.</value>
+  </data>
+  <data name="ARREST_SUSPECT_IN_CUSTODY" xml:space="preserve">
+    <value>Verdächtiger in gewahrsam</value>
+  </data>
+  <data name="ARREST_SUSPECT_IS_CUFFED" xml:space="preserve">
+    <value>Der Verdächtige ist in Handschellen. Möchtest du dich um ihn kümmern?~n~ Bring den Verdächtigen zum Revier (Y)~n~Ruf einen Gefangenentransporter (N)</value>
+  </data>
+  <data name="ARREST_SUSPECT_WILL_BE_DRIVEN_AWAY" xml:space="preserve">
+    <value>Gefangenentransporter ist auf dem Weg</value>
+  </data>
+  <data name="ARREST_TAKE_TO_PD" xml:space="preserve">
+    <value>Bring den Verdächtigen zu einem Revier in der Nähe</value>
+  </data>
+  <data name="BACKUP_AIR_UNIT_DISPATCHED" xml:space="preserve">
+    <value>Luftunterstützung auf dem Weg</value>
+  </data>
+  <data name="BACKUP_IN_VICINITY" xml:space="preserve">
+    <value>Ich bin in der Nähe, halt' durch!</value>
+  </data>
+  <data name="BACKUP_NEED_AIR_SUPPORT" xml:space="preserve">
+    <value>Ich brauche sofort Luftunterstützung bei {0}</value>
+  </data>
+  <data name="BACKUP_NEED_BACKUP" xml:space="preserve">
+    <value>Ich brauche Unterstüzung bei {0}</value>
+  </data>
+  <data name="BACKUP_NO_UNIT_AVAILABLE" xml:space="preserve">
+    <value>Keine Einheit verfügbar</value>
+  </data>
+  <data name="BACKUP_PURSUIT_ASSISTANCE" xml:space="preserve">
+    <value>Ich benötige Unterstützung bei einer Verfolgung</value>
+  </data>
+  <data name="BACKUP_UNIT_DISPATCHED" xml:space="preserve">
+    <value>Eine Einheit ist auf dem Weg</value>
+  </data>
+  <data name="CALLOUT_ACCEPTED" xml:space="preserve">
+    <value>Akzeptiert</value>
+  </data>
+  <data name="CALLOUT_DENIED" xml:space="preserve">
+    <value>Ignoriert</value>
+  </data>
+  <data name="CALLOUT_DISREGARD" xml:space="preserve">
+    <value>Hat sich erledigt</value>
+  </data>
+  <data name="CALLOUT_MUGGING_MESSAGE" xml:space="preserve">
+    <value>An alle vefügbaren Einheiten, möglicher Raubüberfall in {0}</value>
+  </data>
+  <data name="GOONDUTY_CAR_MODEL" xml:space="preserve">
+    <value>Benutze die linke und rechte Pfeiltaste, um einen Wagen auszuwählen.~n~Drücke die Eingabetaste, um dich für einen zu entscheiden.</value>
+  </data>
+  <data name="GOONDUTY_COP_MODEL" xml:space="preserve">
+    <value>Benutze die linke und recht Pfeiltaste, um ein anderes Model zu wählen. Drücke die untere Pfeiltaste, um dein Aussehen zu verändern.~n~Drücke Enter, um dich für eins zu entscheiden.</value>
+  </data>
+  <data name="INPUT_RETURN" xml:space="preserve">
+    <value>EINGABE</value>
+  </data>
+  <data name="LCPDFR_STARTED" xml:space="preserve">
+    <value>Willkommen zu LCPDFR. ~n~~n~Fahr zur nächsten Polizeistation um auf Streife zu gehen.</value>
+  </data>
+  <data name="LCPDMAIN_DEVELOPED_BY" xml:space="preserve">
+    <value>Entwickelt von LMS und Sam.</value>
+  </data>
+  <data name="LCPDMAIN_SCRIPT_CONTRIBUTIONS" xml:space="preserve">
+    <value>Skript-Beiträge von G17 Media Team, Lt.Caine und Abraxas.</value>
+  </data>
+  <data name="LCPDMAIN_SPECIAL_THANKS" xml:space="preserve">
+    <value>Besonderer Dank gilt listener, aru und #iv-modding.</value>
+  </data>
+  <data name="LCPDMAIN_TRANSLATOR_THANKS" xml:space="preserve">
+    <value>Deutsche Übersetzung von LMS.</value>
+  </data>
+  <data name="POLICE_SCANNER_CONTROL" xml:space="preserve">
+    <value>Zentrale</value>
+  </data>
+  <data name="POLICE_SCANNER_OFFICER" xml:space="preserve">
+    <value>Polizist</value>
+  </data>
+  <data name="POLICE_SCANNER_OFFICER_DOWN" xml:space="preserve">
+    <value>Polizist am Boden</value>
+  </data>
+  <data name="POLICE_SCANNER_ROGER_THAT_INVESTIGATE" xml:space="preserve">
+    <value>Verstanden Zentrale. Ich untersuche das</value>
+  </data>
+  <data name="POLICE_SCANNER_SUSPECT_ESCAPED" xml:space="preserve">
+    <value>Verdächtiger entkommen</value>
+  </data>
+  <data name="POLICE_SCANNER_SUSPECT_IN_VEHICLE" xml:space="preserve">
+    <value>Verdächtiger in Fahrzeug</value>
+  </data>
+  <data name="POLICE_SCANNER_SUSPECT_ON_FOOT" xml:space="preserve">
+    <value>Verdächtiger zu Fuß unterwegs</value>
+  </data>
+  <data name="POLICE_SCANNER_VISUAL_LOST" xml:space="preserve">
+    <value>Sichtkontakt verloren</value>
+  </data>
+  <data name="TEXTWALL_INFO" xml:space="preserve">
+    <value>Info</value>
+  </data>
+</root>
