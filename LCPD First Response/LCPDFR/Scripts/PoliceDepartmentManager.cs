@@ -40,17 +40,15 @@
         /// </summary>
         public PoliceDepartmentManager()
         {
-            // Load pd data using legacy code
+            //Load pd data using legacy code
             Legacy.DataFile dataFile = new Legacy.DataFile(Properties.Resources.PoliceDepartments);
             Legacy.DataSet dataSet = dataFile.DataSets[0];
 
             // Initialize list with capacity
             this.PoliceDepartments = new List<PoliceDepartment>(dataSet.Tags.Length);
 
-            foreach (Legacy.Tag tag in dataSet.Tags)
-            {
-                if (tag.Name != "PD")
-                {
+            foreach (Legacy.Tag tag in dataSet.Tags) {
+                if (tag.Name != "PD") {
                     continue;
                 }
 
